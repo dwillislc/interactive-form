@@ -113,6 +113,14 @@ button:hover {
 	background: #184c62;
 }
 
+.required-m {
+	margin-top: -15px;
+	margin-bottom: 15px; 
+	font-size: .85em;
+	color: red;
+	opacity: .5;
+}
+
 /* ================================= 
   Page Styles
 ==================================== */
@@ -174,6 +182,7 @@ button:hover {
 	}
 	.col-3 {
 		width: 23%;
+		padding-bottom: 30px;
 	}
 	.col-6 {
 		width: 49%;
