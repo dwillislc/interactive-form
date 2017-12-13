@@ -10,13 +10,16 @@ $(function () {
 	$("#name").focus();
 })
 
+
 //When other job is selected, insert new input field with text "Your Job Role"
+$('#other-title').hide()
+
 $jobSelect.on('change', function() {
 	if ($jobSelect.val() === "other") {
-		$userInfo.append("<input type='text' id='other-title' name='user_job' placeholder='Your Job Role'>");
+		$('#other-title').show()
 	} else {
 		if ($('#other-title').length > 0) {
-			$('#other-title').remove(); 
+			$('#other-title').hide(); 
 		}	
 	}
 })
